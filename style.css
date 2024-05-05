@@ -26,7 +26,7 @@ body, html {
 }
 
 /* Specific styles for login form */
-.login-container input[type="text"],
+.login-container input[type="email"],
 .login-container input[type="password"] {
     width: calc(100% - 40px);
     padding: 10px 20px;
@@ -37,7 +37,7 @@ body, html {
     background-color: #fafafa;
 }
 
-.login-container input[type="text"]:focus,
+.login-container input[type="email"]:focus,
 .login-container input[type="password"]:focus {
     border-color: #b2b2b2;
     outline: none;
