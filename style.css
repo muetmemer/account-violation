@@ -6,48 +6,51 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Added padding for body on smaller screens */
+    padding: 20px;
 }
 
 .container {
     background-color: white;
-    max-width: 360px; /* Maximum width of the login card */
-    width: 100%; /* Makes it responsive */
+    max-width: 360px;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
     padding: 20px;
     border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding does not add to width */
+    box-sizing: border-box;
 }
 
 .logo img {
-    width: 50px; /* Static width for simplicity */
+    width: 50px;
     margin-bottom: 20px;
 }
 
-input[type="text"], input[type="password"] {
-    width: calc(100% - 40px); /* Full width minus padding */
+/* Specific styles for login form */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 40px);
     padding: 10px 20px;
     margin: 10px 0;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
-    box-sizing: border-box; /* Includes padding in width */
-    background-color: #fafafa; /* Matches Instagram's style */
+    box-sizing: border-box;
+    background-color: #fafafa;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
     border-color: #b2b2b2;
     outline: none;
 }
 
-form {
+.login-container form {
     margin-top: 20px;
 }
 
-form button {
+.login-container form button {
     width: 100%;
     padding: 10px;
-    margin-top: 10px; /* Extra space above the button */
+    margin-top: 10px;
     background-color: #3897f0;
     color: white;
     border: none;
@@ -56,17 +59,17 @@ form button {
     font-size: 14px;
 }
 
-form button:hover {
+.login-container form button:hover {
     background-color: #2878c0;
 }
 
-/* Media query for smaller devices */
+/* Responsive Media Query for the login page only */
 @media (max-width: 600px) {
-    .container {
-        padding: 15px; /* Slightly smaller padding on small screens */
-        margin: 20px; /* Add margin to avoid edges touching */
+    .login-container {
+        padding: 15px;
+        margin: 20px;
     }
-    form button {
-        padding: 12px; /* Slightly larger button for easier interaction */
+    .login-container form button {
+        padding: 12px;
     }
 }
