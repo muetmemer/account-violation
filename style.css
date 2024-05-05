@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 18px;
+    color: #262626;
+}
+
+.content p {
+    font-size: 14px;
+    color: #262626;
+    margin: 10px 0 20px;
+}
+
+button {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: #2878c0;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 40px); /* Full width minus padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includes padding in width */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #b2b2b2;
+    outline: none;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; /* Extra space above the button */
+}
+
+.login-container {
+    padding: 30px;
+}
