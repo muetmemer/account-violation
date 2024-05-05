@@ -20,6 +20,20 @@ body, html {
     box-sizing: border-box;
 }
 
+button {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: #2878c0;
+}
+
 .logo img {
     width: 50px;
     margin-bottom: 20px;
